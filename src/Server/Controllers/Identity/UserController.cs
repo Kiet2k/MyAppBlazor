@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BlazorHero.CleanArchitecture.Server.Controllers.Identity
 {
-    [Authorize]
+    //[Authorize]
     [Route("api/identity/user")]
     [ApiController]
     public class UserController : ControllerBase
@@ -23,7 +23,7 @@ namespace BlazorHero.CleanArchitecture.Server.Controllers.Identity
         /// Get Users Details
         /// </summary>
         /// <returns>Status 200 OK</returns>
-        [Authorize(Policy = Permissions.Users.View)]
+        //[Authorize(Policy = Permissions.Users.View)]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {

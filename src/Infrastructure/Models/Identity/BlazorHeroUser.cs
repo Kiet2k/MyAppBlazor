@@ -19,6 +19,9 @@ namespace BlazorHero.CleanArchitecture.Infrastructure.Models.Identity
         public string ProfilePictureDataUrl { get; set; }
 
         public DateTime CreatedOn { get; set; }
+        public DateTime BirthDate { get; set; }
+
+        public string Interests { get; set; }
 
         public string LastModifiedBy { get; set; }
 
